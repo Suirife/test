@@ -1,4 +1,11 @@
-ALTER TABLE users ADD email VARCHAR(100) UNIQUE;
+ALTER TABLE users ADD(
+gender varchar(25),
+email VARCHAR(100) UNIQUE,
+company VARCHAR(100),
+job VARCHAR(100),
+street VARCHAR(100),
+city VARCHAR(50),
+telephone INT(15) UNIQUE);
 
 INSERT INTO `users` (`name`, `surname`, `patronymic`, `birth_day`, `email`) VALUES 
 ('Gregory', 'Saxon', 'B', '1974-14-29', 'GreguuBSoppxon@rhyta.com'),
